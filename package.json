@@ -1,0 +1,14 @@
+{
+  "type": "module",
+  "dependencies": {
+    "@discordjs/voice": "^0.19.0",
+    "@snazzah/davey": "^0.1.7",
+    "debug": "^4.4.3",
+    "discord.js-selfbot-v13": "^3.7.0",
+    "install": "^0.13.0",
+    "npm": "^11.6.2"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
