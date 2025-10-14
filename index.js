@@ -63,13 +63,13 @@ const start = async () => {
   bot.on("messageCreate", async (msg) => {
     const content = msg.content.trim().toLowerCase();
     if (content === "!join") {
-      console.log("Received !join command → joining voice channel...");
+      console.log("Received !join command → joining voice channel");
       await joinVoice(bot);
       try { await msg.delete(); } catch {}
     }
 
     if (content === "!out") {
-      console.log("Received !out command → leaving voice channel...");
+      console.log("Received !out command → leaving voice channel");
       await leaveVoice();
       try { await msg.delete(); } catch {}
     }
@@ -79,7 +79,7 @@ const start = async () => {
 };
 
 process.on("SIGINT", () => {
-  console.log("Manual stop detected. Disconnecting...");
+  console.log("Manual stop detected. Disconnecting");
   voiceConnections.forEach(({ bot, connection }) => {
     try { connection.destroy(); bot.destroy(); } catch {}
   });
