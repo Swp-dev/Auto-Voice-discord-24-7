@@ -56,7 +56,7 @@ const start = async () => {
   });
 
   bot.on("ready", async () => {
-    console.log(`[Main] Logged in as ${bot.user.username}`);
+    console.log(`[Main] On ${bot.user.username}`);
     await joinVoice(bot);
   });
 
