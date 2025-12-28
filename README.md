@@ -1,4 +1,4 @@
-# Auto-Voice-discord-24-7
+# Discord Voice Joiner 24-7
 ## Support https://discord.gg/RMmP4Ukycr
  1. Edit the config.json (id guild,id voice, token).
  2. To use, open the terminal and send "npm install @snazzah/davey"
